@@ -1,0 +1,38 @@
+
+footer {
+  background-color: #f5ee45;
+  color: #222a2d;
+  padding: 60px 25px 40px 25px;
+  font-size: 15px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-info {
+  width: 400px;
+}
+
+.footer-info p {
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  width: 300px;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  text-align: right;
+  margin-top: 40px;
+}
