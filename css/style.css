@@ -27,7 +27,7 @@
 }
 
 .hero {
-  position: relative;   
+  position: relative;  
   display: flex;
   height: 100vh;
 }
@@ -45,13 +45,15 @@
   color: white;
   font-size: 90px;
   width: 500px;
+  max-width: 100%;
 }
 
 .hero-right {
   position: absolute;
-  left: 76%;
+  right: 25px;
   bottom: 60px;
   width: 300px;
+  max-width: 45%;
   color: white;
 }
 
@@ -151,7 +153,8 @@
   position: relative;
   display: flex;
   gap: 40px;
-  width: 950px;
+  width: 100%;
+  max-width: 950px;
   margin: auto;
   padding: 40px;
   background-color: #f1f2f7;
@@ -159,8 +162,13 @@
 
 .words-box img {
   width: 400px;
+  max-width: 45%;
   height: 550px;
   object-fit: cover;
+}
+
+.words-text {
+  flex: 1;
 }
 
 .words-text p {
@@ -179,7 +187,7 @@
 
 .masters h2 {
   font-size: 150px;
-  width: 1100px;
+  max-width: 1100px;
 }
 
 .masters-row {
@@ -203,6 +211,7 @@
   margin-bottom: 30px;
 }
 
+
 @media (max-width: 1100px) {
   .masters h2 {
     font-size: 100px;
@@ -218,27 +227,40 @@
     width: 400px;
   }
 
-  .hero-right {
-    left: 60%;
-  }
-
   .art img {
     width: 400px;
+    max-width: 50%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card img {
+    height: 280px;
   }
 }
 
 @media (max-width: 800px) {
-  
-    .hero h1 {
+  /* hero */
+  .hero h1 {
     font-size: 45px;
     width: 260px;
-    bottom: 150px;
+    max-width: calc(100% - 50px);
+    bottom: 240px;
   }
 
   .hero-right {
     left: 25px;
+    right: auto;
     bottom: 40px;
     width: 250px;
+    max-width: calc(100% - 50px);
   }
 
   .intro .big-text {

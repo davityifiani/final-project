@@ -1,0 +1,257 @@
+
+.menu .current {
+  text-decoration: underline;
+}
+
+.label {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.hero-left {
+  width: 50%;
+  background-color: #f5ee45;
+}
+
+.hero-photo {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #999999;
+}
+
+.hero h1 {
+  position: absolute;
+  left: 13px;
+  top: 38%;
+  font-size: 160px;
+  text-transform: uppercase;
+  color: #222a2d;
+  white-space: nowrap;
+}
+
+.hero-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.founded {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 870px;
+  padding: 0 20px;
+  margin: 100px auto;
+}
+
+.founded img {
+  width: 396px;
+  max-width: 50%;
+  height: 434px;
+  object-fit: cover;
+}
+
+.founded-text {
+  display: flex;
+  flex-direction: column;      
+  justify-content: space-between;
+}
+
+.founded-text h2 {
+  font-size: 48px;
+  letter-spacing: -2px;
+}
+
+.founded-text p {
+  width: 200px;
+  font-size: 14px;
+}
+
+.music {
+  position: relative;
+  height: 665px;
+}
+
+.music img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-text {
+  position: absolute;
+  left: 50%;
+  right: 25px;
+  bottom: 50px;
+  color: white;
+}
+
+.music-text h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.music-text p {
+  max-width: 300px;
+  margin-left: 155px;
+  font-size: 14px;
+  background-color: rgba(34, 42, 45, 0.6);
+}
+
+.team {
+  background-color: #f65bfd;
+  padding: 20px 0 100px 0;
+}
+
+.team h2 {
+  font-size: 150px;
+  text-align: center;
+  line-height: 0.9;
+  letter-spacing: -6px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-top: 70px;
+}
+
+.member {
+  width: 232px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.member .name {
+  text-transform: uppercase;
+}
+
+.member .role {
+  margin-bottom: 25px;
+}
+
+.member img {
+  height: 330px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1100px) {
+  .hero h1 {
+    font-size: 110px;
+  }
+
+  .team h2 {
+    font-size: 100px;
+    letter-spacing: -4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    display: block;
+    height: auto;
+  }
+
+  .hero-left {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .hero-photo {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    top: 90px;
+  }
+
+  .hero-bottom {
+    width: 100%;
+    bottom: auto;
+    top: 38vh;
+  }
+
+  /* founded */
+  .founded {
+    display: block;
+    margin: 60px auto;
+  }
+
+  .founded img {
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+  }
+
+  .founded-text h2 {
+    font-size: 35px;
+    margin: 20px 0;
+  }
+
+  .founded-text p {
+    width: 100%;
+  }
+
+  .music {
+    height: 560px;
+  }
+
+  .music-text {
+    left: 20px;
+    right: 20px;
+  }
+
+  .music-text h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .music-text p {
+    max-width: none;
+    margin-left: 0;
+  }
+
+  /* team */
+  .team h2 {
+    font-size: 50px;
+    letter-spacing: -2px;
+    padding: 0 15px;
+  }
+
+  .team-row {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .member {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .member img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .team h2 {
+    font-size: 38px;
+  }
+}
