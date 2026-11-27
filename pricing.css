@@ -1,27 +1,19 @@
-/* this page has a dark background */
+
 body {
   background-color: #23282b;
   color: white;
 }
 
-/* the current page link is underlined */
 .menu .current {
   text-decoration: underline;
 }
 
-/* safety: nothing inside the page can ever make a sideways slider */
-main {
-  overflow-x: clip;
-}
-
-/* ---------- TOP TEXT ---------- */
 .intro {
   text-align: center;
   padding: 110px 25px 50px 25px;
 }
 
 .intro h1 {
-  overflow-wrap: break-word;
   font-size: 80px;
   line-height: 1;
   letter-spacing: -3px;
@@ -32,7 +24,6 @@ main {
   font-size: 14px;
 }
 
-/* ---------- THE 3 PLANS ---------- */
 .plans {
   display: flex;
   gap: 18px;
@@ -42,7 +33,6 @@ main {
 .plan {
   position: relative;
   flex: 1;
-  min-width: 0;            /* lets the card shrink instead of pushing the page wider */
   background-color: #34393d;
   padding: 25px 20px 24px 20px;
   text-align: center;
@@ -54,7 +44,6 @@ main {
   margin-bottom: 15px;
 }
 
-/* the small $ sits at the top left of the big number */
 .price {
   display: flex;
   justify-content: center;
@@ -76,13 +65,11 @@ main {
 }
 
 .about {
-  overflow-wrap: break-word;
   font-size: 14px;
   line-height: 1.4;
   margin-bottom: 30px;
 }
 
-/* "Best Value" sits on the top edge of the middle card */
 .tag {
   position: absolute;
   top: -15px;
@@ -95,7 +82,6 @@ main {
   white-space: nowrap;
 }
 
-/* ---------- BUTTONS ---------- */
 .btn {
   display: block;
   width: 67%;
@@ -116,7 +102,6 @@ main {
   margin-bottom: 0;
 }
 
-/* ---------- MEDIUM SCREENS ---------- */
 @media (max-width: 1100px) {
   .intro h1 {
     font-size: 60px;
@@ -128,7 +113,6 @@ main {
   }
 }
 
-/* ---------- PHONES AND SMALL SCREENS ---------- */
 @media (max-width: 800px) {
   .intro {
     padding: 120px 20px 40px 20px;
@@ -139,7 +123,6 @@ main {
     letter-spacing: -1px;
   }
 
-  /* the 3 plans stack in one column */
   .plans {
     display: block;
     padding-bottom: 100px;
@@ -155,7 +138,6 @@ main {
   }
 }
 
-/* ---------- VERY SMALL PHONES ---------- */
 @media (max-width: 400px) {
   .intro h1 {
     font-size: 34px;

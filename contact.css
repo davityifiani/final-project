@@ -1,19 +1,16 @@
-/* the current page link is underlined */
+
 .menu .current {
   text-decoration: underline;
 }
 
-/* ---------- PHOTO SIDE + PINK FORM SIDE ---------- */
 .contact {
   display: flex;
   min-height: 100vh;
 }
 
-/* ---------- LEFT: PHOTO ---------- */
 .contact-photo {
   position: relative;
   width: 50%;
-  min-width: 0;
 }
 
 .contact-photo img {
@@ -34,18 +31,14 @@
   line-height: 0.92;
   letter-spacing: -3px;
   color: white;
-  overflow-wrap: break-word;   /* a long word wraps instead of sticking out */
 }
 
-/* ---------- RIGHT: FORM ---------- */
 .contact-form {
   width: 50%;
-  min-width: 0;
   background-color: #f65bfd;
   padding: 100px 100px 60px 130px;
 }
 
-/* the small text in a dark box at the top */
 .tagline {
   width: 300px;
   margin-bottom: 25px;
@@ -65,7 +58,6 @@
 
 .field {
   flex: 1;
-  min-width: 0;            /* lets the box shrink instead of pushing the page wider */
   margin-bottom: 28px;
 }
 
@@ -85,7 +77,6 @@ button {
 input,
 textarea {
   width: 100%;
-  min-width: 0;
   height: 35px;
   padding: 0 10px;
   border: 1px solid #222a2d;
@@ -111,7 +102,7 @@ button {
   cursor: pointer;
 }
 
-/* ---------- ERROR MESSAGES (they show after a wrong or empty field) ---------- */
+
 .error {
   display: none;
   margin-top: 10px;
@@ -136,7 +127,6 @@ input:user-invalid + .error {
   display: block;
 }
 
-/* ---------- MEDIUM SCREENS ---------- */
 @media (max-width: 1100px) {
   .contact-photo h1 {
     font-size: 55px;
@@ -148,9 +138,7 @@ input:user-invalid + .error {
   }
 }
 
-/* ---------- PHONES AND SMALL SCREENS ---------- */
 @media (max-width: 800px) {
-  /* photo on top, form below */
   .contact {
     display: block;
     min-height: 0;
@@ -171,14 +159,12 @@ input:user-invalid + .error {
   }
 }
 
-/* ---------- VERY SMALL PHONES ---------- */
 @media (max-width: 400px) {
   .contact-photo h1 {
     font-size: 34px;
     letter-spacing: -1px;
   }
 
-  /* first/last name and email/phone stack */
   .row {
     display: block;
   }

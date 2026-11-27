@@ -1,14 +1,9 @@
-/* this page has a dark background */
+
 body {
   background-color: #23282b;
   color: white;
 }
 
-main {
-  overflow-x: clip;       /* nothing can make a sideways slider */
-}
-
-/* ---------- THE TEXT COLUMN ---------- */
 .terms {
   max-width: 790px;
   padding: 105px 25px 140px 54px;
@@ -18,11 +13,9 @@ main {
   font-size: 88px;
   line-height: 0.95;
   letter-spacing: -3px;
-  overflow-wrap: break-word;
   margin-bottom: 85px;
 }
 
-/* ---------- THE SECTIONS ---------- */
 .section {
   margin-bottom: 75px;
 }
@@ -31,7 +24,6 @@ main {
   font-size: 31px;
   letter-spacing: -1px;
   margin-bottom: 26px;
-  overflow-wrap: break-word;
 }
 
 .section p {
@@ -40,7 +32,6 @@ main {
   margin-bottom: 18px;
 }
 
-/* ---------- MEDIUM SCREENS ---------- */
 @media (max-width: 1100px) {
   .terms h1 {
     font-size: 70px;
@@ -48,7 +39,6 @@ main {
   }
 }
 
-/* ---------- PHONES AND SMALL SCREENS ---------- */
 @media (max-width: 800px) {
   .terms {
     padding: 110px 20px 90px 20px;
@@ -69,7 +59,6 @@ main {
   }
 }
 
-/* ---------- VERY SMALL PHONES ---------- */
 @media (max-width: 400px) {
   .terms h1 {
     font-size: 38px;

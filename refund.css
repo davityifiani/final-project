@@ -1,0 +1,69 @@
+body {
+  background-color: #23282b;
+  color: white;
+}
+
+.refund {
+  max-width: 790px;
+  padding: 145px 25px 140px 54px;
+}
+
+.refund h1 {
+  font-size: 88px;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  margin-bottom: 85px;
+}
+
+.section {
+  margin-bottom: 75px;
+}
+
+.section h2 {
+  font-size: 31px;
+  letter-spacing: -1px;
+  margin-bottom: 26px;
+}
+
+.section p {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 1100px) {
+  .refund h1 {
+    font-size: 70px;
+    letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .refund {
+    padding: 110px 20px 90px 20px;
+  }
+
+  .refund h1 {
+    font-size: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .refund h1 {
+    font-size: 38px;
+  }
+
+  .section h2 {
+    font-size: 21px;
+  }
+}
