@@ -96,7 +96,7 @@
   .hero h1 {
     font-size: 45px;
     width: 260px;
-    max-width: calc(100% - 50px);
+    max-width: 80%;
     bottom: 120px;
   }
 
@@ -104,7 +104,7 @@
     left: 25px;
     right: auto;
     bottom: 40px;
-    max-width: calc(100% - 50px);
+    max-width: 80%;
   }
 
   .programs {
